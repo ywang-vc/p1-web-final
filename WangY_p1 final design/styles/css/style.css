@@ -1,0 +1,763 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Indie+Flower&family=Six+Caps&display=swap");
+footer .quicklink, footer .social, footer, #selected .bookslide .book, #works .shelf .booklist, #works .shelf, .introduction, .container, body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .quicklink .links, footer .social .subscribe, footer .social .sns, #selected .bookslide, #description .cutline, header .mobilenav, .container.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font: 400 2rem/1.5rem "Six Caps", sans-serif "Cardo", serif;
+  background: url("/img/pattern.png") repeat top left;
+  background-size: 100% auto;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #623F2B;
+}
+
+h1 {
+  font: 400 5em/120% "Six Caps", sans-serif;
+}
+
+h2, h5, p {
+  font-family: "Cardo", serif;
+  line-height: 150%;
+  margin: 0.5em 0;
+}
+
+h2, h4, h5 {
+  font-weight: 700;
+  letter-spacing: 5%;
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  margin: 1em 0;
+  padding: 0.5em 2em;
+  background-color: #DF9721;
+  border-radius: 1.5em;
+  border: 0.15em solid #DF9721;
+  font: 400 3em/120% "Six Caps", sans-serif;
+  color: #F4F4F2;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.btn:hover {
+  color: #DF9721;
+  border: 0.15em dotted #DF9721;
+  background-color: transparent;
+}
+
+/*----header----*/
+header {
+  margin: 0;
+  padding: 0;
+}
+header .mobilenav {
+  padding: 2em;
+  margin: 0 auto;
+  background-color: #0D0D0D;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .mobilenav h1 {
+  color: #E8B427;
+  letter-spacing: 0.1em;
+}
+header .mobilenav .logo {
+  height: 5em;
+  margin: 0 2em;
+}
+
+/*homepage*/
+#author {
+  margin: 1em 0;
+}
+#author img {
+  margin: 2em 0 0.5em 0;
+  border-radius: 1.5em;
+  width: 100%;
+}
+
+.introduction p {
+  margin: 0.5em 0;
+}
+.introduction p span {
+  font-style: italic;
+}
+
+#intro {
+  margin: 1em 0;
+}
+#intro .topbook-mobile {
+  width: 100%;
+}
+
+/*biography*/
+#biography .mobilephoto {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+}
+#biography h1 {
+  z-index: 0;
+  position: relative;
+  margin: 20em auto 0;
+}
+
+hr {
+  margin: 2em auto;
+  width: 80%;
+  border: 0;
+  border-top: 0.2em dotted #DF9721;
+}
+
+/*interview*/
+#headerimg img {
+  width: 100%;
+}
+#headerimg p.smalltalk {
+  font-style: italic;
+  z-index: 0;
+  position: absolute;
+  top: 20em;
+  margin: 0 10%;
+}
+
+#interview h1 {
+  line-height: 120%;
+}
+#interview h1 span {
+  font-size: 4em;
+  color: #E8B427;
+}
+#interview .qna {
+  margin: 0;
+}
+#interview .qna h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Indie Flower", cursive;
+  font-size: 12em;
+  color: #E8B427;
+  position: absolute;
+  z-index: -1;
+}
+#interview .qna .content {
+  z-index: 0;
+  margin-top: 4em;
+}
+#interview .qna .content h4 {
+  font-family: "Cardo", serif;
+  text-transform: uppercase;
+  color: #623F2B;
+}
+
+/*-----works page-----*/
+#works .shelf {
+  width: 100%;
+}
+#works .shelf .booklist {
+  margin: 2em auto;
+  width: 100%;
+}
+#works .shelf .booklist a {
+  font: 400 3em/120% "Six Caps", sans-serif;
+  color: #623F2B;
+}
+#works .shelf .booklist a:hover {
+  color: #DF9721;
+}
+#works .shelf .booklist img {
+  margin: 2em auto;
+  width: 100%;
+  border-radius: 5em 0 5em 0;
+}
+
+/*-----details page-----*/
+.bookcover {
+  width: 90%;
+  border-radius: 0 0 5em 0;
+}
+
+#description h1 {
+  margin: 0.5em 0;
+}
+#description .cutline {
+  margin: 1em auto;
+}
+#description .cutline img {
+  width: 30%;
+  margin: 0.2em;
+}
+
+#reviews h1 {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 1em auto 0.5em;
+}
+#reviews a.read {
+  color: #DF9721;
+  font-style: italic;
+  font-family: "Cardo", serif;
+}
+#reviews a.read:hover {
+  color: #623F2B;
+}
+
+#illustration {
+  margin: 1em auto 3em;
+}
+
+/*selected books in every page*/
+#selected {
+  margin: 2em auto;
+}
+#selected h1 {
+  margin: 0.5em auto;
+}
+#selected .bookslide {
+  margin: 1em auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+}
+#selected .bookslide .book {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 48%;
+  margin: 0.2em 0;
+}
+#selected .bookslide .book img {
+  width: 13em;
+  height: 18em;
+  border-radius: 1.5em;
+}
+#selected .bookslide .book h2 {
+  text-align: center;
+}
+
+/*---footer---*/
+footer {
+  background-color: #0D0D0D;
+  padding: 3em 0;
+}
+footer .social p {
+  color: #F4F4F2;
+  text-align: center;
+}
+footer .social .sns img {
+  width: 3em;
+  margin: 1em;
+}
+footer .social .subscribe {
+  margin: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .social .subscribe #email, footer .social .subscribe #submit {
+  margin: 0;
+  padding: 0 1em;
+  border: #E8B427 solid 0.1em;
+}
+footer .social .subscribe #email {
+  height: 5em;
+  width: 25em;
+  color: lightgray;
+  font-family: "Cardo", serif;
+}
+footer .social .subscribe #submit {
+  height: 2.3em;
+  font: 400 2em/120% "Six Caps", sans-serif;
+  letter-spacing: 10%;
+  background-color: #623F2B;
+  color: #E8B427;
+}
+footer .quicklink .logo-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+footer .quicklink .logo-footer img {
+  height: 2.8em;
+}
+footer .quicklink .logo-footer h1 {
+  margin: 0.5em;
+  color: #F4F4F2;
+  letter-spacing: 0.1em;
+  font-size: 3em;
+}
+footer .quicklink .links ul {
+  padding: 0;
+  margin-right: 1em;
+}
+footer .quicklink .links ul li {
+  list-style: none;
+  padding: 0.5em;
+}
+footer .quicklink .links ul li a {
+  color: #E8B427;
+  font: 400 1.5em/150% "Cardo", serif;
+  padding: 0;
+}
+footer .quicklink .links ul li a:hover {
+  color: #F4F4F2;
+}
+
+/*media queries*/
+/*mobile*/
+@media screen and (min-device-width: 320px) {
+  nav {
+    display: none;
+  }
+  .bgimg1 {
+    display: none;
+  }
+  .photo {
+    display: none;
+  }
+}
+/*tablet*/
+@media screen and (min-device-width: 640px) {
+  nav {
+    display: none;
+  }
+  .bgimg1 {
+    display: none;
+  }
+  .photo {
+    display: none;
+  }
+  .bookslide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .bookslide .book {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+  }
+  #works .shelf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #works .shelf .booklist {
+    -webkit-box-flex: 48%;
+        -ms-flex: 48%;
+            flex: 48%;
+  }
+}
+/*desktop*/
+@media screen and (min-device-width: 1200px) {
+  #works .shelf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  article, .container.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse nowrap;
+            flex-flow: row-reverse nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  h1 {
+    font-size: 7em;
+  }
+  h3 {
+    font-size: 20em;
+  }
+  h4 {
+    font-size: 2em;
+  }
+  .btn {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  .mobilenav {
+    display: none !important;
+  }
+  header {
+    background: rgba(244, 244, 242, 0.6);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur(0.6em);
+            backdrop-filter: blur(0.6em);
+    padding: 1em 3em;
+  }
+  header nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav .logo2 {
+    height: 3em;
+  }
+  header nav h1, header nav a {
+    color: #623F2B;
+    letter-spacing: 0.2em;
+    font-size: 2em;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header nav ul li {
+    list-style: none;
+    margin: 0 1em;
+  }
+  header nav ul li a {
+    color: #DF9721;
+    font-family: "Six Caps", sans-serif;
+    letter-spacing: 0.3em;
+    text-align: center;
+  }
+  header nav ul li:hover {
+    color: #623F2B;
+    border-bottom: #623F2B 0.1em solid;
+  }
+  header nav a {
+    font: 400 2em/120% "Six Caps", sans-serif;
+    text-align: center;
+  }
+  header nav a:hover {
+    color: #DF9721;
+    border-bottom: #DF9721 0.1em solid;
+  }
+  .container.row .introduction {
+    width: 60%;
+  }
+  .container.row .introduction .booktitle {
+    background: url(/img/booktitle.png) no-repeat top center;
+    background-size: contain;
+    height: 17em;
+    margin-top: 3em;
+  }
+  .container.row .introduction p {
+    margin: 1em 0;
+  }
+  /*desktop homepage*/
+  #author {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #author img {
+    width: 30%;
+    height: 30%;
+  }
+  #intro {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #intro .bgimg1 {
+    display: inherit;
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    right: 0;
+    width: 40%;
+  }
+  #intro .topbook-mobile {
+    width: 40%;
+    height: 40%;
+  }
+  #intro .topbook-text {
+    position: relative;
+  }
+  /*desktop bio page*/
+  #biography .mobilephoto {
+    display: none;
+  }
+  #biography .photo {
+    display: contents;
+    clear: both;
+    text-align: center;
+  }
+  #biography .photo img {
+    width: 20em;
+    height: 30em;
+  }
+  #biography h1 {
+    margin: 0;
+  }
+  /*desktop interview page*/
+  #headerimg {
+    margin: 0 5%;
+    position: absolute;
+    top: 10em;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 30%;
+    text-align: right;
+    z-index: -5;
+  }
+  #interview {
+    margin: 15em auto;
+    width: 100%;
+  }
+  #interview h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+  }
+  #interview .question {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    max-height: 280em;
+  }
+  #interview .question .qna {
+    width: 45%;
+  }
+  /*desktop works page*/
+  .work-bg {
+    background: url(/img/works-bg.png) no-repeat;
+    background-size: cover;
+    z-index: -5;
+    position: absolute;
+    width: 120em;
+    height: 200em;
+    left: -20em;
+    top: -17em;
+  }
+  #works .shelf {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #works .shelf .booklist {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+  }
+  /*desktop detail page*/
+  .title-year {
+    background: url(/img/title-year.png) no-repeat top center;
+    background-size: 100% auto;
+    width: 35em;
+    height: 10em;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 3em 0;
+  }
+  article {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .bookcover {
+    width: 30%;
+    height: 30%;
+    border-radius: 0;
+    margin: 0 3em;
+  }
+  #description {
+    width: 65%;
+  }
+  #description h1 {
+    display: none;
+  }
+  #description .cutline img {
+    width: 18%;
+  }
+  /*------footer bar------*/
+  #selected {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #selected .bookslide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #selected .bookslide .book {
+    -webkit-box-flex: 18%;
+        -ms-flex: 18%;
+            flex: 18%;
+  }
+  footer {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    background: rgba(98, 63, 43, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse nowrap;
+            flex-flow: row-reverse nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 3em;
+  }
+  footer .social {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  footer .social p {
+    font-size: 1em;
+  }
+  footer .quicklink {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .quicklink .logo-footer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .quicklink .logo-footer h1 {
+    font-size: 2em;
+  }
+  footer .quicklink li {
+    padding: 0;
+    color: #F4F4F2;
+  }
+}
